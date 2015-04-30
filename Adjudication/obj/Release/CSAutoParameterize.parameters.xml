@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="NHTA-Web.config Connection String" description="NHTA Connection String used in web.config by the application to access the database." defaultValue="User ID=NHTAAdmin;Password=awards123;Persist Security Info=True;Initial Catalog=Adjudicate14;Data Source=.\SQLExpress;Connect Timeout=15;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Justin\\Source\\Workspaces\\Workspace\\Adjudication\\Adjudication\\Adjudication\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NHTA']/@connectionString" />
+  </parameter>
+</parameters>

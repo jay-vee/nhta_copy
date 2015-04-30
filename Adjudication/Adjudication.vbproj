@@ -1,0 +1,1369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{0585D794-8B0F-4D9F-BB02-13AFF1165201}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Adjudication</RootNamespace>
+    <AssemblyName>Adjudication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Adjudication.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Adjudication.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.7.1213\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox, Version=3.3.1.12354, Culture=neutral, PublicKeyToken=5962a4e684a48b87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Includes\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.2.1.0.3\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net40\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net40\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net40\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net40\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Adjudicate.aspx" />
+    <Content Include="AdjudicatorComments.aspx" />
+    <Content Include="AdminAssignAdjudicators.aspx" />
+    <Content Include="AdminCategory.aspx" />
+    <Content Include="AdminCategoryList.aspx" />
+    <Content Include="AdminCategoryScoringRange.aspx" />
+    <Content Include="AdminCategoryScoringRangeList.aspx" />
+    <Content Include="AdminCompany.aspx" />
+    <Content Include="AdminCompanyList.aspx" />
+    <Content Include="AdminEmail.aspx" />
+    <Content Include="AdminEmailLog.aspx" />
+    <Content Include="AdminEmailMassMailings.aspx" />
+    <Content Include="AdminErrorLog.aspx" />
+    <Content Include="AdminLoginSettings.aspx" />
+    <Content Include="AdminMessages.aspx" />
+    <Content Include="AdminNominations.aspx" />
+    <Content Include="AdminProduction.aspx" />
+    <Content Include="AdminProductionList.aspx" />
+    <Content Include="AdminReassignmentRequests.aspx" />
+    <Content Include="AdminScoring.aspx" />
+    <Content Include="AdminScoringRange.aspx" />
+    <Content Include="AdminScoringRangeList.aspx" />
+    <Content Include="AdminUser.aspx" />
+    <Content Include="AdminUserList.aspx" />
+    <Content Include="AdminVenue.aspx" />
+    <Content Include="AdminVenueList.aspx" />
+    <Content Include="Admin_WebsiteNotes.aspx" />
+    <Content Include="Admin_WebsiteSettings.aspx" />
+    <None Include="App_Themes\Default\Default.css.OLD" />
+    <Content Include="App_Themes\Default\Styles_NOT_USED.css" />
+    <Content Include="Ballot.aspx" />
+    <Content Include="BallotSummary.aspx" />
+    <Content Include="Ballot\BallotEntry.aspx" />
+    <Content Include="Ballot\BallotEntrySummary.aspx" />
+    <Content Include="ConfirmAdjudicator.aspx" />
+    <Content Include="Includes\DCountUp.js" />
+    <Content Include="Includes\Functions.js" />
+    <Content Include="Scripts\Bootstrap-3.3.2\css\bootstrap-theme.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\css\bootstrap-theme.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\css\bootstrap.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\css\bootstrap.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\js\bootstrap.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\js\bootstrap.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\js\npm.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\BootstrapAlertCustomizations.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\BootstrapTableEffects.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\BootstrapValidator-v0.4.5\css\bootstrapValidator.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\BootstrapValidator-v0.4.5\css\bootstrapValidator.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\BootstrapValidator-v0.4.5\js\bootstrapValidator.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\BootstrapValidator-v0.4.5\js\bootstrapValidator.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\css\font-awesome.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\css\font-awesome.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jquery-1.11.2.min.js" />
+    <Content Include="SQLScripts\2014-12\3_1_StoredProcs.sql" />
+    <Content Include="SQLScripts\2015-03\1_ApplicationDefaults_addField_CharacterCount.sql" />
+    <Content Include="SQLScripts\2015-03\1_ExpandField_AdminContactName.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_BestActorActress.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_BestSupportingActor.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_BestSupportingActress.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_Choreographer.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_CostumeDesigner.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_Director.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_LightingDesigner.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_MusicalDirector.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_OriginalPlaywright.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_Production.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_Production_OLD.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_ScenicDesigner.sql" />
+    <Content Include="SQLScripts\2015-04\ReportScoring_SoundDesigner.sql" />
+    <Content Include="UpcomingProductions.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Images\Action_Failure_RedX.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Action_Success_GreenCheck.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Arrow_Add_Blue_22px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Arrow_First_22px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Arrow_Last_22px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Arrow_Left_Blue_22px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Arrow_Left_Blue_80px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Arrow_Next_22px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Arrow_Previous_22px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Arrow_Right_Blue_22px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Arrow_Right_Blue_80px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Calendar_16px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Exclamation.jpg" />
+    <Content Include="Images\Exclamation_60x60.jpg" />
+    <Content Include="Images\Icon_Accept_GreenCheck_80px.png" />
+    <Content Include="Images\Icon_Print_35px.png" />
+    <Content Include="Images\Icon_Reassign_35px.png" />
+    <Content Include="Images\Icon_Reload_35px.png" />
+    <Content Include="Images\Icon_Save_50px.png" />
+    <Content Include="Images\Icon_Score_35px.png" />
+    <Content Include="Images\Icon_Status_35px.png" />
+    <Content Include="Images\Icon_YellowExclamation_128px.png" />
+    <Content Include="Images\Icon_YellowExclamation_22px.png" />
+    <Content Include="Images\Icon_YellowExclamation_64px.png" />
+    <Content Include="Images\NHTABlackLogo.jpg" />
+    <Content Include="Images\NHTA_HappySadFaces_Black_120x127px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\nhta_happysadfaces_black_wshadow_110px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\NHTA_LogoNEW_NoGlare_300x275px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\NHTA_Logo_Black_120x57px.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\NHTheatreAwardsLogo_Full.jpg" />
+    <Content Include="Images\NHTheatreAwardsLogo_Negative.jpg" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\UnderConstruction.jpg" />
+    <Content Include="Images\WaitProcessingSpinner.gif" />
+    <Content Include="Includes\FreeTextBox.dll" />
+    <Content Include="Login.aspx" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="MessageToAdmin.aspx" />
+    <Content Include="App_Themes\Default\Default.skin" />
+    <Content Include="App_Themes\Default\vssver2.scc" />
+    <Content Include="Includes\vssver2.scc" />
+    <Content Include="Reports.aspx" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="MasterPageNoNav.Master" />
+    <Content Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="Reports\AdjLateBallot30_60_90.aspx" />
+    <Content Include="Reports\AdjLateConfirm.aspx" />
+    <Content Include="Reports\AdjLateScoring.aspx" />
+    <Content Include="Reports\AdjReassignRequest.aspx" />
+    <Content Include="Reports\FinalistByProductionName.aspx" />
+    <Content Include="Reports\ScoringAdjudicatorDetail.aspx" />
+    <Content Include="Reports\ScoringBestActor.aspx" />
+    <Content Include="Reports\ScoringBestActress.aspx" />
+    <Content Include="Reports\ScoringBestSupportingActor.aspx" />
+    <Content Include="Reports\ScoringBestSupportingActress.aspx" />
+    <Content Include="Reports\ScoringDetail.aspx" />
+    <Content Include="Reports\ScoringDirector.aspx" />
+    <Content Include="Reports\ScoringFinalists_CardsForPresenters.aspx" />
+    <Content Include="Reports\ScoringMusicalDirector.aspx" />
+    <Content Include="Reports\ScoringProductionStaff.aspx" />
+    <Content Include="Reports\ScoringSummary.aspx" />
+    <Content Include="Reports\ScoringSummaryDetail.aspx" />
+    <Content Include="Reports\ScoringSummaryFinalists.aspx" />
+    <Content Include="Reports\ScoringSummaryTopNominees.aspx" />
+    <Content Include="Reports\ScoringSummaryWebFormat.aspx" />
+    <Content Include="Reports\ScoringWinnersAndFinalists.aspx" />
+    <Content Include="Reports\UserBrowserHistory.aspx" />
+    <Content Include="Reports\UserContactList.aspx" />
+    <Content Include="Report_CompanyList.aspx" />
+    <Content Include="Report_ViewAllProductions.aspx" />
+    <Content Include="Scripts\Bootstrap-slider\css\slider.css" />
+    <Content Include="Scripts\Bootstrap-slider\js\bootstrap-slider.js" />
+    <Content Include="Scripts\bootstrap3-dialog-master\css\bootstrap-dialog.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\bootstrap3-dialog-master\css\bootstrap-dialog.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\bootstrap3-dialog-master\js\bootstrap-dialog.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\bootstrap3-dialog-master\js\bootstrap-dialog.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\html5shiv.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\external\jquery\jquery.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-bg_flat_30_cccccc_40x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-bg_flat_50_5c5c5c_40x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-bg_glass_20_555555_1x400.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-bg_glass_40_0078a3_1x400.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-bg_glass_40_ffc73d_1x400.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-bg_gloss-wave_25_333333_500x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-bg_highlight-soft_80_eeeeee_1x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-bg_inset-soft_25_000000_1x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-bg_inset-soft_30_f58400_1x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-icons_222222_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-icons_4b8e0b_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-icons_a83300_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-icons_cccccc_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\images\ui-icons_ffffff_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\index.html" />
+    <Content Include="Scripts\jQueryUI-1.11.2\jquery-ui.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\jquery-ui.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\jquery-ui.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\jquery-ui.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\jquery-ui.structure.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\jquery-ui.structure.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\jquery-ui.theme.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\jquery-ui.theme.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-SliderPips-1.5.5\jquery-ui-slider-pips.css" />
+    <Content Include="Scripts\jQueryUI-SliderPips-1.5.5\jquery-ui-slider-pips.js" />
+    <Content Include="Scripts\jQueryUI-SliderPips-1.5.5\jquery-ui-slider-pips.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Moment.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\respond.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SQLScripts\2009-12\AddNewFeature_ScoringStatus.sql" />
+    <Content Include="SQLScripts\2009-12\AddYouthCompany.sql" />
+    <Content Include="SQLScripts\2009-12\NewField_OriginalProduction.sql" />
+    <Content Include="SQLScripts\2009-12\ReportScoring_Production.sql" />
+    <Content Include="SQLScripts\2009-12\Save_Scoring-Update.sql" />
+    <Content Include="SQLScripts\2010-01\UPDATE-Save_Production.sql" />
+    <Content Include="SQLScripts\2010-01\UPDATE_Find_UserEmail.sql" />
+    <Content Include="SQLScripts\2010_01\UPDATE-Save_Production.sql" />
+    <Content Include="SQLScripts\2010_01\UPDATE_Find_UserEmail.sql" />
+    <Content Include="SQLScripts\2011-01\addfield_FoundAdvertisement_to_Scoring.sql" />
+    <Content Include="SQLScripts\2011-01\Add_EmailFrom_Address.sql" />
+    <Content Include="SQLScripts\2011-01\Disqualify_PeacockPlayers_ChristmasCarol.sql" />
+    <Content Include="SQLScripts\2011-01\ProductionType_Youth.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_BestActorActress.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_BestSupportingActor.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_BestSupportingActress.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_Choreographer.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_CostumeDesigner.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_Director.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_LightingDesigner.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_MusicalDirector.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_OriginalPlaywright.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_Production.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_ScenicDesigner.sql" />
+    <Content Include="SQLScripts\2011-01\ReportScoring_SoundDesigner.sql" />
+    <Content Include="SQLScripts\2011-01\SecurtyChanges.sql" />
+    <Content Include="SQLScripts\2011-01\sp_Secure_UserAddEdit.sql" />
+    <Content Include="SQLScripts\2011-01\Status.sql" />
+    <Content Include="SQLScripts\2011-03\Save_Scoring.sql" />
+    <Content Include="SQLScripts\2014-12\0_Drop_aspNet_Tables.sql" />
+    <Content Include="SQLScripts\2014-12\1_ProductionCategory_SchemaChanges.sql" />
+    <Content Include="SQLScripts\ChangeAllSProcsOwnerToDBO.sql" />
+    <Content Include="SQLScripts\ChangeAllTableOwnerToDBO.sql" />
+    <Content Include="SQLScripts\DeleteAllContraintsAndTables.sql" />
+    <Content Include="SQLScripts\DeleteAllSProcs.sql" />
+    <Content Include="SQLScripts\Export_AllAssignmentsWithScoresComments.sql" />
+    <Content Include="SQLScripts\FIX_Youth_NotShowingOnReports.sql" />
+    <Content Include="SQLScripts\INSERT_FromEmail_Address.sql" />
+    <Content Include="SQLScripts\New_Year_Clear_Old_Data.sql" />
+    <Content Include="StyleSheets\NHTA_OLDStyles.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StyleSheets\bootstrap-datetimepicker.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StyleSheets\bootstrap-datetimepicker.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StyleSheets\NHTA.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StyleSheets\Normalize.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeout.aspx" />
+    <Content Include="UnAuthorized.aspx" />
+    <Content Include="UnderConstruction.aspx" />
+    <Content Include="UpdateNotes\UpdateNotes.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ViewAssignments.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQLScripts\2009-12\vssver2.scc" />
+    <Content Include="SQLScripts\2010-01\vssver2.scc" />
+    <Content Include="SQLScripts\2010_01\vssver2.scc" />
+    <Content Include="SQLScripts\vssver2.scc" />
+    <Content Include="UpdateNotes\UpdateNotes.bak" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\Bootstrap-slider\less\slider.less" />
+    <Content Include="Scripts\bootstrap3-dialog-master\less\bootstrap-dialog.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\jQueryUI-1.11.2\jquery-ui.min.js.map">
+      <DependentUpon>jquery-ui.js</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\PublishProfiles\InetWeb %28localhost%29.pubxml" />
+    <Content Include="Scripts\Bootstrap-3.3.2\css\bootstrap-theme.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\css\bootstrap.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\Bootstrap-3.3.2\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\fonts\fontawesome-webfont.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\animated.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\bordered-pulled.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\core.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\fixed-width.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\font-awesome.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\icons.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\larger.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\list.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\mixins.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\path.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\rotated-flipped.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\stacked.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\less\variables.less">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\font-awesome.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_animated.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_bordered-pulled.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_core.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_fixed-width.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_icons.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_larger.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_list.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_mixins.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_path.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_rotated-flipped.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_stacked.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\font-awesome-4.3.0\scss\_variables.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\PublishProfiles\nhta.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.PROD.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminCategoryScoringRange.aspx.designer.vb">
+      <DependentUpon>AdminCategoryScoringRange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppCode\Security.vb" />
+    <Compile Include="Ballot\BallotEntry.aspx.designer.vb">
+      <DependentUpon>BallotEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ballot\BallotEntry.aspx.vb">
+      <DependentUpon>BallotEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ballot\BallotEntrySummary.aspx.designer.vb">
+      <DependentUpon>BallotEntrySummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ballot\BallotEntrySummary.aspx.vb">
+      <DependentUpon>BallotEntrySummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\CommonFunctions.vb" />
+    <Compile Include="UpcomingProductions.aspx.designer.vb">
+      <DependentUpon>UpcomingProductions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpcomingProductions.aspx.vb">
+      <DependentUpon>UpcomingProductions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringBestActor.aspx.designer.vb">
+      <DependentUpon>ScoringBestActor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringBestActress.aspx.designer.vb">
+      <DependentUpon>ScoringBestActress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringBestSupportingActor.aspx.designer.vb">
+      <DependentUpon>ScoringBestSupportingActor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringBestSupportingActress.aspx.designer.vb">
+      <DependentUpon>ScoringBestSupportingActress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringDirector.aspx.designer.vb">
+      <DependentUpon>ScoringDirector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringMusicalDirector.aspx.designer.vb">
+      <DependentUpon>ScoringMusicalDirector.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringProductionStaff.aspx.designer.vb">
+      <DependentUpon>ScoringProductionStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringSummaryTopNominees.aspx.designer.vb">
+      <DependentUpon>ScoringSummaryTopNominees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Timeout.aspx.designer.vb">
+      <DependentUpon>Timeout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Timeout.aspx.vb">
+      <DependentUpon>Timeout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnAuthorized.aspx.designer.vb">
+      <DependentUpon>UnAuthorized.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnAuthorized.aspx.vb">
+      <DependentUpon>UnAuthorized.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnderConstruction.aspx.designer.vb">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnderConstruction.aspx.vb">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAssignments.aspx.designer.vb">
+      <DependentUpon>ViewAssignments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAssignments.aspx.vb">
+      <DependentUpon>ViewAssignments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppCode\Authentication.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppCode\Common.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppCode\CustomMail.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppCode\DataAccess.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adjudicate.aspx.designer.vb">
+      <DependentUpon>Adjudicate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adjudicate.aspx.vb">
+      <DependentUpon>Adjudicate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdjudicatorComments.aspx.designer.vb">
+      <DependentUpon>AdjudicatorComments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdjudicatorComments.aspx.vb">
+      <DependentUpon>AdjudicatorComments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAssignAdjudicators.aspx.designer.vb">
+      <DependentUpon>AdminAssignAdjudicators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAssignAdjudicators.aspx.vb">
+      <DependentUpon>AdminAssignAdjudicators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCategory.aspx.designer.vb">
+      <DependentUpon>AdminCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCategory.aspx.vb">
+      <DependentUpon>AdminCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCategoryList.aspx.designer.vb">
+      <DependentUpon>AdminCategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCategoryList.aspx.vb">
+      <DependentUpon>AdminCategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCategoryScoringRange.aspx.vb">
+      <DependentUpon>AdminCategoryScoringRange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCategoryScoringRangeList.aspx.designer.vb">
+      <DependentUpon>AdminCategoryScoringRangeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCategoryScoringRangeList.aspx.vb">
+      <DependentUpon>AdminCategoryScoringRangeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCompany.aspx.designer.vb">
+      <DependentUpon>AdminCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCompany.aspx.vb">
+      <DependentUpon>AdminCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCompanyList.aspx.designer.vb">
+      <DependentUpon>AdminCompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCompanyList.aspx.vb">
+      <DependentUpon>AdminCompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEmail.aspx.designer.vb">
+      <DependentUpon>AdminEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEmail.aspx.vb">
+      <DependentUpon>AdminEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEmailLog.aspx.designer.vb">
+      <DependentUpon>AdminEmailLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEmailLog.aspx.vb">
+      <DependentUpon>AdminEmailLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEmailMassMailings.aspx.designer.vb">
+      <DependentUpon>AdminEmailMassMailings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEmailMassMailings.aspx.vb">
+      <DependentUpon>AdminEmailMassMailings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminErrorLog.aspx.designer.vb">
+      <DependentUpon>AdminErrorLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminErrorLog.aspx.vb">
+      <DependentUpon>AdminErrorLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLoginSettings.aspx.designer.vb">
+      <DependentUpon>AdminLoginSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginSettings.aspx.vb">
+      <DependentUpon>AdminLoginSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMessages.aspx.designer.vb">
+      <DependentUpon>AdminMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMessages.aspx.vb">
+      <DependentUpon>AdminMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminNominations.aspx.designer.vb">
+      <DependentUpon>AdminNominations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNominations.aspx.vb">
+      <DependentUpon>AdminNominations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProduction.aspx.designer.vb">
+      <DependentUpon>AdminProduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProduction.aspx.vb">
+      <DependentUpon>AdminProduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminProductionList.aspx.designer.vb">
+      <DependentUpon>AdminProductionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProductionList.aspx.vb">
+      <DependentUpon>AdminProductionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminReassignmentRequests.aspx.designer.vb">
+      <DependentUpon>AdminReassignmentRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReassignmentRequests.aspx.vb">
+      <DependentUpon>AdminReassignmentRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminScoring.aspx.designer.vb">
+      <DependentUpon>AdminScoring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScoring.aspx.vb">
+      <DependentUpon>AdminScoring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminScoringRange.aspx.designer.vb">
+      <DependentUpon>AdminScoringRange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScoringRange.aspx.vb">
+      <DependentUpon>AdminScoringRange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminScoringRangeList.aspx.designer.vb">
+      <DependentUpon>AdminScoringRangeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminScoringRangeList.aspx.vb">
+      <DependentUpon>AdminScoringRangeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUser.aspx.designer.vb">
+      <DependentUpon>AdminUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser.aspx.vb">
+      <DependentUpon>AdminUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUserList.aspx.designer.vb">
+      <DependentUpon>AdminUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUserList.aspx.vb">
+      <DependentUpon>AdminUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminVenue.aspx.designer.vb">
+      <DependentUpon>AdminVenue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminVenue.aspx.vb">
+      <DependentUpon>AdminVenue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminVenueList.aspx.designer.vb">
+      <DependentUpon>AdminVenueList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminVenueList.aspx.vb">
+      <DependentUpon>AdminVenueList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_WebsiteNotes.aspx.designer.vb">
+      <DependentUpon>Admin_WebsiteNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_WebsiteNotes.aspx.vb">
+      <DependentUpon>Admin_WebsiteNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_WebsiteSettings.aspx.designer.vb">
+      <DependentUpon>Admin_WebsiteSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_WebsiteSettings.aspx.vb">
+      <DependentUpon>Admin_WebsiteSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ballot.aspx.designer.vb">
+      <DependentUpon>Ballot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ballot.aspx.vb">
+      <DependentUpon>Ballot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BallotSummary.aspx.designer.vb">
+      <DependentUpon>BallotSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BallotSummary.aspx.vb">
+      <DependentUpon>BallotSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmAdjudicator.aspx.designer.vb">
+      <DependentUpon>ConfirmAdjudicator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmAdjudicator.aspx.vb">
+      <DependentUpon>ConfirmAdjudicator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.vb">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.vb">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.vb">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.vb">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.vb">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.vb">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.vb">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageNoNav.Master.designer.vb">
+      <DependentUpon>MasterPageNoNav.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageNoNav.Master.vb">
+      <DependentUpon>MasterPageNoNav.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessageToAdmin.aspx.designer.vb">
+      <DependentUpon>MessageToAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessageToAdmin.aspx.vb">
+      <DependentUpon>MessageToAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.vb">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.aspx.vb">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AdjLateBallot30_60_90.aspx.designer.vb">
+      <DependentUpon>AdjLateBallot30_60_90.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AdjLateBallot30_60_90.aspx.vb">
+      <DependentUpon>AdjLateBallot30_60_90.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AdjLateConfirm.aspx.designer.vb">
+      <DependentUpon>AdjLateConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AdjLateConfirm.aspx.vb">
+      <DependentUpon>AdjLateConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AdjLateScoring.aspx.designer.vb">
+      <DependentUpon>AdjLateScoring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AdjLateScoring.aspx.vb">
+      <DependentUpon>AdjLateScoring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\AdjReassignRequest.aspx.designer.vb">
+      <DependentUpon>AdjReassignRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AdjReassignRequest.aspx.vb">
+      <DependentUpon>AdjReassignRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\FinalistByProductionName.aspx.designer.vb">
+      <DependentUpon>FinalistByProductionName.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FinalistByProductionName.aspx.vb">
+      <DependentUpon>FinalistByProductionName.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringAdjudicatorDetail.aspx.designer.vb">
+      <DependentUpon>ScoringAdjudicatorDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringAdjudicatorDetail.aspx.vb">
+      <DependentUpon>ScoringAdjudicatorDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringBestActor.aspx.vb">
+      <DependentUpon>ScoringBestActor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringBestActress.aspx.vb">
+      <DependentUpon>ScoringBestActress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringBestSupportingActor.aspx.vb">
+      <DependentUpon>ScoringBestSupportingActor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringBestSupportingActress.aspx.vb">
+      <DependentUpon>ScoringBestSupportingActress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringDetail.aspx.designer.vb">
+      <DependentUpon>ScoringDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringDetail.aspx.vb">
+      <DependentUpon>ScoringDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringDirector.aspx.vb">
+      <DependentUpon>ScoringDirector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringFinalists_CardsForPresenters.aspx.designer.vb">
+      <DependentUpon>ScoringFinalists_CardsForPresenters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringFinalists_CardsForPresenters.aspx.vb">
+      <DependentUpon>ScoringFinalists_CardsForPresenters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringMusicalDirector.aspx.vb">
+      <DependentUpon>ScoringMusicalDirector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringProductionStaff.aspx.vb">
+      <DependentUpon>ScoringProductionStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringSummary.aspx.designer.vb">
+      <DependentUpon>ScoringSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringSummary.aspx.vb">
+      <DependentUpon>ScoringSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringSummaryDetail.aspx.designer.vb">
+      <DependentUpon>ScoringSummaryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringSummaryDetail.aspx.vb">
+      <DependentUpon>ScoringSummaryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringSummaryFinalists.aspx.designer.vb">
+      <DependentUpon>ScoringSummaryFinalists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringSummaryFinalists.aspx.vb">
+      <DependentUpon>ScoringSummaryFinalists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringSummaryTopNominees.aspx.vb">
+      <DependentUpon>ScoringSummaryTopNominees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringSummaryWebFormat.aspx.designer.vb">
+      <DependentUpon>ScoringSummaryWebFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringSummaryWebFormat.aspx.vb">
+      <DependentUpon>ScoringSummaryWebFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ScoringWinnersAndFinalists.aspx.designer.vb">
+      <DependentUpon>ScoringWinnersAndFinalists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ScoringWinnersAndFinalists.aspx.vb">
+      <DependentUpon>ScoringWinnersAndFinalists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\UserBrowserHistory.aspx.designer.vb">
+      <DependentUpon>UserBrowserHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\UserBrowserHistory.aspx.vb">
+      <DependentUpon>UserBrowserHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\UserContactList.aspx.designer.vb">
+      <DependentUpon>UserContactList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\UserContactList.aspx.vb">
+      <DependentUpon>UserContactList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report_CompanyList.aspx.designer.vb">
+      <DependentUpon>Report_CompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report_CompanyList.aspx.vb">
+      <DependentUpon>Report_CompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report_ViewAllProductions.aspx.designer.vb">
+      <DependentUpon>Report_ViewAllProductions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report_ViewAllProductions.aspx.vb">
+      <DependentUpon>Report_ViewAllProductions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AdjLateBallot30_60_90.aspx.resx">
+      <DependentUpon>AdjLateBallot30_60_90.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AdjLateConfirm.aspx.resx">
+      <DependentUpon>AdjLateConfirm.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AdjLateScoring.aspx.resx">
+      <DependentUpon>AdjLateScoring.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AdjReassignRequest.aspx.resx">
+      <DependentUpon>AdjReassignRequest.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FinalistByProductionName.aspx.resx">
+      <DependentUpon>FinalistByProductionName.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringAdjudicatorDetail.aspx.resx">
+      <DependentUpon>ScoringAdjudicatorDetail.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringBestActor.aspx.resx">
+      <DependentUpon>ScoringBestActor.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringBestActress.aspx.resx">
+      <DependentUpon>ScoringBestActress.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringBestSupportingActor.aspx.resx">
+      <DependentUpon>ScoringBestSupportingActor.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringBestSupportingActress.aspx.resx">
+      <DependentUpon>ScoringBestSupportingActress.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringDetail.aspx.resx">
+      <DependentUpon>ScoringDetail.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringDirector.aspx.resx">
+      <DependentUpon>ScoringDirector.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringFinalists_CardsForPresenters.aspx.resx">
+      <DependentUpon>ScoringFinalists_CardsForPresenters.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringMusicalDirector.aspx.resx">
+      <DependentUpon>ScoringMusicalDirector.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringProductionStaff.aspx.resx">
+      <DependentUpon>ScoringProductionStaff.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringSummary.aspx.resx">
+      <DependentUpon>ScoringSummary.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringSummaryDetail.aspx.resx">
+      <DependentUpon>ScoringSummaryDetail.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringSummaryTopNominees.aspx.resx">
+      <DependentUpon>ScoringSummaryTopNominees.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ScoringSummaryWebFormat.aspx.resx">
+      <DependentUpon>ScoringSummaryWebFormat.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserBrowserHistory.aspx.resx">
+      <DependentUpon>UserBrowserHistory.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserContactList.aspx.resx">
+      <DependentUpon>UserContactList.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQLScripts\2007_Q2\" />
+    <Folder Include="SQLScripts\2007_Q4\" />
+    <Folder Include="SQLScripts\2008-02\" />
+    <Folder Include="SQLScripts\2008-05\" />
+    <Folder Include="SQLScripts\2008-11\" />
+    <Folder Include="SQLScripts\2008-12\temp\" />
+    <Folder Include="SQLScripts\2009-01\" />
+    <Folder Include="SQLScripts\2009-02\" />
+    <Folder Include="SQLScripts\2009-03\" />
+    <Folder Include="SQLScripts\2015-01\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54792/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

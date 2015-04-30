@@ -1,0 +1,380 @@
+
+/* Controls the Navigation */
+
+.PPTTemplate
+{
+	background-repeat: repeat-x;
+	background-image: url(Images/NHTAGradientVertical400.jpg);
+	height: 800px;
+	color: White;
+}
+
+.buttonscontainer
+{
+	width: 140px;
+}
+
+.buttons a
+{
+	color: #FFFFFF;
+	background-color: #000000;
+	padding: 2px;
+	padding-left: 3px;
+	display: block;
+	border-left: 10px solid #FFFFCC;
+	font: 12px Arial, sans-serif;
+	text-decoration: none;
+	text-align: left;
+	margin-top: 1px;
+}
+
+.buttons a:hover
+{
+	border-left: 10px solid #FFFF66; /* color: #FFFF66; */
+	text-decoration: underline;
+	background-color: White;
+	color: Maroon;
+}
+
+
+.BannerHeader
+{
+	font-size: 14pt;
+	color: White;
+	font-weight: bold;
+	font-family: Times New Roman;
+	font-variant: small-caps;
+	background-color: Black;
+}
+
+/* Controls the main application font */
+.fontTitle
+{
+	font-size: 14pt;
+	color: Black;
+	font-family: Verdana;
+	font-variant: small-caps;
+}
+
+.fontTitleHeader
+{
+	font-size: 16pt;
+	color: White;
+	font-weight: bold;
+	font-family: Verdana;
+	font-variant: small-caps;
+}
+
+
+.fontTitleHeaderBlack
+{
+	font-size: 16pt;
+	color: Black;
+	font-weight: bold;
+	font-family: Verdana;
+	font-variant: small-caps;
+}
+
+.fontTitleHeaderLight
+{
+	font-size: 12pt;
+	color: White;
+	font-weight: bold;
+	font-family: Verdana;
+	font-variant: small-caps;
+}
+
+
+.fontHeader
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 13;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.fontHeaderWhite
+{
+	color: White;
+	font-family: Verdana;
+	font-size: 13;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.fontDataWhite
+{
+	color: White;
+	font-family: Verdana;
+	font-size: 11;
+}
+
+.fontHeaderMedium
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 12;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+
+.fontHeaderLight
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 11;
+	font-variant: small-caps;
+}
+
+.fontHeaderSmall
+{
+	color: Black;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 12;
+	font-variant: small-caps;
+}
+
+.fontFooter
+{
+	font-family: Verdana;
+	font-size: 10;
+}
+
+.fontDataLabelName
+{
+	font-family: Verdana;
+	font-size: 10;
+	font-variant: small-caps;
+}
+
+.fontDataHeader
+{
+	color: Black;
+	font-weight: bold;
+	font-family: Verdana;
+	font-size: 11;
+	font-variant: small-caps;
+}
+.fontData
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 11;
+}
+
+.fontDataLarge
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 12;
+}
+
+.fontDataSelected
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 11;
+	background-color: Silver;
+}
+
+
+.fontDataHyperlink
+{
+	color: blue;
+	font-family: Verdana;
+	font-size: 11;
+}
+
+.fontDataHyperlinkSmall
+{
+	color: blue;
+	font-family: Verdana;
+	font-size: 9;
+}
+
+.fontDataDesc
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 11;
+	font-variant: small-caps;
+}
+
+.fontDataSmall
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 9;
+}
+
+.fontDataSmall_ReportHeader
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 9;
+	border-bottom-style: solid;
+	border-bottom-width: medium;
+	border-bottom-color: #000000;
+}
+
+
+.fontData_LightBorder
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 11;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: Gray;
+}
+
+.UnderConstruction
+{
+	background-repeat: repeat-x;
+	background-image: url(Images/UnderConstruction.jpg);
+}
+
+.GradientVertical
+{
+	background-repeat: repeat-x;
+	background-image: url(Images/NHTAGradientVertical.jpg);
+}
+
+.Divider_GradientHorizontal660
+{
+	background-repeat: no-repeat;
+	background-image: url(Images/NHTAGradientHorizontal.jpg);
+	width: 660px;
+	height: 1px;
+}
+
+.Divider_GradientHorizontal800
+{
+	background-repeat: no-repeat;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+	width: 660px;
+	height: 1px;
+}
+
+.GradientHorizontal
+{
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal30px.jpg);
+}
+
+.fontScoringHeader
+{
+	color: White;
+	font-family: Verdana;
+	font-size: 12;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal.jpg);
+}
+
+.fontScoringHeader800
+{
+	color: White;
+	font-family: Verdana;
+	font-size: 12;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.DefaultScoringHeader
+{
+	color: White;
+	font-family: Verdana;
+	font-size: 12;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.DefaultGridHeader800
+{
+	color: White;
+	font-family: Verdana;
+	font-size: 12;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.ReportHeader800
+{
+	color: White;
+	font-family: Verdana;
+	font-size: 16;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.ReportHeader1000
+{
+	color: White;
+	font-family: Verdana;
+	font-size: 16;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal1000.jpg);
+}
+
+.ReportHeader1000_Webformat
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 16;
+	width: 1000px;
+	text-decoration: underline;
+}
+
+.ReportDetailSummary800
+{
+	color: Black;
+	font-family: Verdana;
+	font-size: 11;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.ReportHeader1240
+{
+	color: White;
+	font-family: Verdana;
+	font-size: 16;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal1240.jpg);
+}
+.LeftNavEmpty
+{
+	font-size: 4;
+	
+}
+
+.BannerHeaderImage
+{
+	padding: 1px;
+	background-image: url('/Images/NHTA_WebBanner_2009_650X99px.jpg' );
+	background-repeat: no-repeat;
+	width: 650px;
+	height: 100px;
+}
+
+.validatorCalloutHighlight
+{
+	background-color: lemonchiffon;
+}

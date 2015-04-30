@@ -1,0 +1,349 @@
+================================================================================================================================================================================
+Updates 12/22/2009
+
+Bug Fixes:
+ - Productions can now be deleted when not sending emails (I mean it this time!)
+ - Remaining references on Admin pages of Delete of Production changed to Remove
+
+Administrators:
+ - New Report: 'Finalist Listing (for Public Release)' which is intended for cut/paste of data to HTML postings and emails
+ - New Report Option - Sort Order.  Can select by Score or By Production Name.  Works for 'Summary Report' and new 'Finalist Listing' report
+ - Added "Youth" Company Type
+ 
+================================================================================================================================================================================
+Updates 12/21/2009
+
+Bug Fixes:
+ - Fixed issue with "Optional Comments to Producing Company" not being saved properly with the ballot (no data was lost)
+ - Productions can now be deleted (finally)
+
+Administrators:
+ - Changed how Original Productions are set:
+	- Production Types are now either "Musical" or "Drama/Comedy" (also removed "Children" type)
+	- New field "Original Production" must be set to YES or NO (defaults to NO)
+ - Added New field "Original Production" to Production List screen
+ - All previously set Original Productions have had their new fields set to YES. And the production type appropriately set to "Musical" or "Drama/Comedy"
+ - Nomination screen now enables/disables the "Original Playwright" field based on value of the new field "Original Production" 
+ - Scoring reports now correctly include/group nominees for "Original Production", Including Best Production
+ - Scoring reports for "Original Production" now only will include Productions iwth the new field "Original Production" set to YES
+ - When removing a production from the list, changed "Production Cancelled" text to "Production Removed from Adjudication"
+
+Liaisons: 
+ - Added the new "Best Production" and "Optional Comments to Producing Company" comments field to Comments page (to be used after awards show)
+ 
+================================================================================================================================================================================
+Updates 12/17/2009
+
+Administrators:
+ - Fixed bug when editing an existing Adjudicator Assignment
+ - Added Adjudication "Status" to track if adjudicators have missed assignments or just not submitted ballots
+ - Added Adjudication "Status" field to many lists
+ - Adjudicators that select "Did not attend performance" for new Adjudication "Status" - will be required to enter in a reason for the failure.
+ 
+Adjudicators:
+ - Printing a Ballot should now fit to 1 page
+ - Reassignment Request "status" now displays on the main menu
+
+================================================================================================================================================================================
+Updates 12/14/2009
+
+Administrators:
+ - "Best Production" reports now correctly  use the new manually entered field instead of old calculated values
+ 
+================================================================================================================================================================================
+Updates 10/23/2009
+
+Administrators:
+ - Assigning Adjudicators now has a checkbox that can bypass assignment restrictions
+
+================================================================================================================================================================================
+Updates 10/23/2009
+
+Administrators:
+ - Deleting productions will now turn off the emailing notifications if selected
+ - Fixed sorting of Access type on User List
+ - Added "Admin Notes" boxes to Production and Nomination screens
+ 
+Liaisons: 
+ - When updating PRODUCTION information, all updates will be emailed to the Producing company menbers, and all assigned Adjudicators
+ 
+General:
+ - Printing Ballots is simpler and less confusing (althought the ballot to print pops up into a new window)
+ - Changed the navigation menu to highlight with a white background and black text
+
+================================================================================================================================================================================
+Updates 10/20/2009
+
+Administrators:
+ - Can now set User status to SUSPENDED and EXPELLED
+ - Added process to Delete a production and automatically remove and email all associated Adjudicators and Liaisons
+
+General:
+ - Now shows SUSPENDED and EXPELLED company members in RED
+
+================================================================================================================================================================================
+Updates 7/9/2009
+
+General:
+- Added "Last Build Date" to bottom of Main Menu page
+
+================================================================================================================================================================================
+Updates 6/30/2009
+
+Administrators:
+ - Can now enter add comments to auto-generated emails for Assignments, ReAssignments, Deletions
+ - Can now turn off auto-generated email when Deleting and Assignment
+
+================================================================================================================================================================================
+Updates 6/19/2009
+
+Administrators:
+ - Can now enter in Production dates within the 60 day window
+ - Adjudication Reassignments now exclude Adjudicators from already assigned Theatre Groups (except for the requesting Adjudicator's Theatre Company)
+
+================================================================================================================================================================================
+Updates 6/15/2009
+
+General:
+- Added Browser detection and reporting (for assitance in troubleshooting)
+
+================================================================================================================================================================================
+Updates 6/4/2009
+
+Liaisons:
+- changed behaviour of saving Nominations
+
+================================================================================================================================================================================
+Updates 6/3/2009 
+
+Adjudicators:
+ - Fixed issue with non-administrators using the new ballot system.
+
+================================================================================================================================================================================
+Updates 5/31/2009 - MAJOR UPDATE
+
+==> New Ballot System Added!
+
+================================================================================================================================================================================
+Updates 4/2/2009
+
+Administrators:
+ - Added more text Formatting features to Email, Catetory, and Category Scoring Range webpages.
+
+================================================================================================================================================================================
+Updates 3/20/2009
+
+Liaisons:
+- new Navigation link to 2008 Comments
+
+Administrators:
+- Mass Emailings for Assignment Reminders and Nomination Reminders have added to the beggining of the Email Body:
+	"NOTE: This is an Automatically generated email. This email is intended to be a couresty reminder."
+- Emails sent for Adjudication Assigments, ReAssignments, and mass Assignment Reminders now contain the text in the email body:
+	"IMPORTANT: 'Re-Assignment Requests' are only accepted when submitted via the Adjudication Website.  DO NOT request reassignments via email as they *will not* be processed."
+- Trained Adjudicators listed when making Assignments/ReAssignments will now exclude any Adjudicator with more than 8 (default) assignments.
+
+================================================================================================================================================================================
+Updates 3/18/2009
+
+General:
+- upgraded Rich Text box: should now support for Firefox, Google Chrome, Apple Safari, IE8 beta1, and Opera browsers
+
+Liaisons:
+- Nominations are now restricted; Only productions that are listed at Original can nominate Original Playwright; only Musicals can nominate Music Director & Choreographers
+
+Administrators:
+- Widened Production List webpage and added Production Type to list
+ 
+================================================================================================================================================================================
+Updates 3/13/2009
+
+Administrators:
+- Adjudication re-assignment requests now show other members from requesting adjudicators theatre company, but no already assigned adjudicators.
+
+===============================================================================================================================================================================
+Updates 3/11/2009
+
+Liaisons:
+- System again restricts Liaisons when entering/updating Production information to > 60 Days
+
+Administrators:
+- Adjudication assignments will again filter out adjudicators from already assigned companies, except for *Unaffilliated Adjudicators 
+
+================================================================================================================================================================================
+Updates 3/4/2009
+
+Administrators:
+- Email webpage now allows selecting users and theatre companies from a list box. (removed old drop down list of theatre companies and users)
+
+================================================================================================================================================================================
+Updates 2/20/2009
+
+General:
+- Inactive users no longer show up on the Main Menu listing of affiliated theatre company members
+
+Administrators:
+- Widened Admin User List page to 1000 pixels - added Primary Email address to listing
+- Page now defaults to excluding Inactive users;  has checkbox to show inactive if needed
+- Widened Admin Company List page to 1000 pixels - added Company Email address to listing
+- Page now defaults to excluding Inactive users;  has checkbox to show inactive if needed
+
+================================================================================================================================================================================
+Updates 2/16/2009
+
+General:
+- Updated header graphic to include the NHTA Logo
+
+Adjudicators:
+- Fixed missing "Best Production" from Scoring Ballot
+- Added information message on main menu for when to confirm with Producing Theatre companies that Adjudicators will attend
+
+================================================================================================================================================================================
+Updates 2/9/2009
+
+Liaisons:
+- Fixed issue when viewing Adjudicator comments that some fields would not be shown.
+- Fixed issue that production without a Director could not be retrieved.
+
+Administrators:
+- Fixed issue when viewing Adjudicator some comments the "Print View" button would cause an error
+
+General:
+- Changed note to request website access to include requirements to have attended NHTA Training
+
+================================================================================================================================================================================
+Updates 1/9/2009
+
+Administrators:
+- Added 3 new menu items: Matrix Comments, Categories, Scoring Ranges.  These are used with the new Ballot system (not yet completed)
+- Added NHTA Year to Header 
+- Fixed error when logging email 
+
+================================================================================================================================================================================
+Updates 1/3/2009
+
+Administrators:
+- Added Scoring Summary Detail report
+- Added Scoring Adjudicator Detail report
+- Removed Score total from Adjudicator assignment screen
+- Reserve Adjudicators now indicated on Adjudicator assignment and Scoring lists
+
+================================================================================================================================================================================
+Updates 1/1/2009
+
+General:
+- Fixed emails displaying the wrong theatre company name for information regarding Assigned Adjudicators
+- Added Navigation link for "Print Ballot"
+- Added NHTA Image from www.NHTheatre.com website to Header
+
+Liaisons:
+- Productions must be entered within the date boundries of the current NHTA Calendar Year
+
+Administrators:
+- User Contact Report now displays Access Level and 2nd Email Address.  Now is 1000 pixels wide.
+- Fixed sending of Emails to Inactive Companies
+- Fixed sending of Emails to Inactive members 2nd email address
+- Added NHTA Calendar Year start and end dates to the "Website Settings" page
+- Added Rich Text Box with HTML editing for website messages to the "Website Settings" page
+- Added Last Updated Name and Date fields to the "Website Settings" page
+- Added validation check to "Production" page to ensure a Production's Closing date occurs during the NHTA Calendar year
+- Can now send custom Emails to only addresses in the "Other Email Addresses" field
+- Email "From" address list changed to dropdown box and expanded (now data from table)
+- Added Reserve Adjuducator field to Productions assigned adjudicator listing (when assigning/deleting assignments)
+- Email Log now displays From address in Blue.  To addresses now listed in blue.
+
+================================================================================================================================================================================
+Updates 11/4/2008
+
+General:
+- Added Rich Text Box to Email of "Message to Admin" - Emails will now be sent in HTML
+- Added new "My Nominations" link for Liaisons
+- Changed order of navigation links for Liaisons
+- Backup Adjudicators can now view "My Company Assignments"
+- Company name now displays in the title on page "My Company Assignments"
+- Added new link "Update Notes" to view this file
+
+Requesting New Passwords:
+- Requesting a New Password via the 'I Forgot my Password' link now works	 
+- Requesting a New Password via the 'I Forgot my Password' link now correctly resets the users account (unlocks the account)
+- Added reminder to email to change the password after user logs in
+- Requesting a New Password via the 'I Forgot my Password' link now emails Primary and Secondary email addresses
+
+Administrators:
+- Added Rich Text Box to built in Email functionality - Emails will now be sent in HTML
+- Fixed Selections for Email Receipients on Email Page
+- Added "Company" emails to Email Receipient options
+- Removed option to email Inactive users
+- Emailing "Other Email Addresses" is now always visible and larger
+- Option to "View All Email Recipients" now dynamically sizes depending on # of recipients
+- New Email feature to "Add Production Information to Email".  Selecting the Production appends Production/Venue/Ticket information to Rich Text Box (useful for requesting Adjudicators)
+- Email page is now 20% wider
+
+
+================================================================================================================================================================================
+Updates 10/6/2008
+
+Fixed Bug that deletes Adjudicator score if assignment is Edited after scoring is submitted.
+Fixed Bug preventing scoring submissions
+Fixed Bug allowing Reassignment Requests after Scoring had been submitted
+
+================================================================================================================================================================================
+Updates 9/30/2008
+
+Website:
+- Timeout now set for 2 hours
+- A "Timeout" page will now display if timed out after 2 hours
+
+
+Main Menu Updates:
+- Many menu order changes.  Please take a moment to see the left navigation menu system.
+- New navigation button "View all Companies" allows Registered users can now see a list of all participating Theatre Companies, with their contact information.
+- Removed "gaps" in the left navigation menu (only affected some Liaisons)
+
+Adjudicators:
+- Changed "My Adjudication" to 3 separate navigation buttons:
+		Request ReAssignment
+		Confirm Attendance
+		Score Ballot
+- Requesting Reassignments webpage is now much more clear.
+- Can now Request Reassignments if a production has opened but not yet closed.
+- Added informational notes when Confirming Attendance or when Requesting Reassignments
+
+
+Adjudicators & Liaisons:
+- New navigation button for "My Company Adjudications" will show you all Adjudication Assignments and their Statuses for all Adjudicators in your Theatre Company
+
+
+Adjudicators (Ballots):
+- Greatly simplified input of Comments
+- Removed all messages about the 15 minute timeout
+- Ballots/Scoring webpages now have error messages to top and bottom of page so you can easily see if an error message is displayed. (if error occurs)
+- Ballots/Scoring webpages now show Venue information for Adjudicated Production (Venue Address, City, State ZIP) & Ticket Contact Info (Name, Phone, Email)
+
+
+Assignment Emails:
+- Added Venue information for Adjudicated Production (Venue Address, City, State ZIP) & Ticket Contact Info (Name, Phone, Email)
+- Emails Adjudication Reassignments now go to the correct group of people: Old Adjudicator & Company Liaisons; New Adjudicator & Company Liaisons; Producing Company Liaisons
+- Emails Adjudication Reassignments should now have fewer Duplicate emails sent to same recipient (when recipient is a Liaison & assigned Adjudicator)
+- All emails sent from the Website are now logged.  Use the new link "Email Log" to view emails sent.
+- "Send Email" navigation link changed to "Email"
+- For Nomination submissions, added Production information to Confirmation Email 
+- Emails are now sent when Adjudicators are Removed from an Assignment
+- New User Login and Updated User Login informational email now lists all data fields, including last login date & time
+
+
+Administrator Updates:
+- Adjudication Reassignments now show the Adjudicator Company in the Drop Down List
+- Adjudicators listed for Assignment and Reassignments will not be listed if they previously Adjudicated a show for the same Producing company
+- Adjudicators listed for Assignment and Reassignments now show the Number of Adjudications for that Adjudicators affiliated Company 
+    (ie:  Adjudicator Name (N) [X of XX], where N=Adjuducator Assignments; X=Total Assignments for all Adjudicators affiliated Company; XX = Total Adjudications expected from Company)
+- Reserve Adjudicator selection available
+- Checkbox "Include Adjudicator counts" on Adjudication Assignments and Reassignments webpages changed to "Sort by Assignment Counts"
+- Email "*Unaffiliated/At Large" is now showing in the drop down list when selecting "with Theatre Company" checkbox
+- When making a User "Inactive" the system no longer requires an email address or phone number.
+
+Bug Fixes:
+ - Fixed issue emailing a user their information when a Primary AND Secondary email address was supplied
+ - Fixed email body text of User data updates when an Admin changes the information (optional email)
+ - Unaffiliated Administrators can again access the "Company Admin" webpage
+ - Fixed LATE calculation for Adjudicator Ballot submission

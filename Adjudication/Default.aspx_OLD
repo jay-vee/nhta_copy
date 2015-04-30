@@ -1,0 +1,154 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Default.aspx.vb" Inherits="Adjudication._Default1" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>NHTA Adjudication Website</title>
+    <link href="Styles.css" type="text/css" rel="STYLESHEET" />
+</head>
+<body>
+    <form id="MainMenu" method="post" runat="server" class="Text">
+    <asp:ScriptManager ID="sm1" runat="server">
+    </asp:ScriptManager>
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td colspan="2" width="100%">
+                <!-- #include file="Includes/Header.asp" -->
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="top">
+                <table id="tblPageTitle" width="100%">
+                    <tr>
+                        <td width="50%" class="fontScoringHeader">
+                            Welcome to the NH Theatre Awards Adjudication Website
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Text" style="padding-left: 10px; padding-right: 10px">
+                            Each year the NH Theatre Awards showcases the states remarkable achievements and exceptional talent in locally produced theatre by helping encourage, stimulate and recognize creative excellence and exceptional dedication among the players, producers, writers, directors and technicians who bring theatrical magic to the small stages of the Granite State.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellpadding="1" cellspacing="1" width="100%" class="Text">
+                                <tr>
+                                    <td style="width: 50%" align="center" valign="middle">
+                                        <asp:HyperLink ID="hlnkLogin" runat="server" NavigateUrl="Login.aspx" Width="195px" Height="45px" Font-Bold="True" CssClass="ButtonGold" ToolTip="Registered Adjudicators and Liaisons please login">Login</asp:HyperLink>
+                                    </td>
+                                    <td style="width: 50%" align="center" valign="middle">
+                                        <asp:HyperLink ID="hlnkForgotPassword" runat="server" Font-Bold="True" NavigateUrl="ForgotPassword.aspx" Width="195px" Height="45px" CssClass="ButtonGold" ToolTip="Have your Login ID and a *new* Password emailed to you">I forgot my Password</asp:HyperLink>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" valign="top" class="Text">
+                <asp:UpdateProgress ID="UpdateProgress_Bottom" runat="server" DisplayAfter="30">
+                    <ProgressTemplate>
+                        <img src="Images/WaitProcessingSpinner.GIF" alt="Please Wait..." />
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
+                <asp:UpdatePanel runat="server" ID="UpdatePanelMain">
+                    <ContentTemplate>
+                        <table width="100%">
+                            <tr>
+                                <td width="50%" class="fontScoringHeader">
+                                    Notes to Liaisons and Adjudicators
+                                </td>
+                                <td width="50%" class="fontScoringHeader">
+                                    Upcoming Productions for Adjudication
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="Text" align="left" rowspan="99" valign="top">
+                                    <asp:Label ID="lblMainpageApplicationDesc" runat="server" CssClass="Text" Width="100%"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" align="center">
+                                    <table id="tblDefaultMessages" cellspacing="0" cellpadding="4" width="100%" border="0">
+                                        <tr>
+                                            <td width="100%" align="left" valign="top">
+                                                <asp:DataList ID="gridCommunity" CssClass="Text" runat="server" Width="100%" BorderStyle="none" GridLines="None" BorderWidth="0px" DataKeyField="PK_ProductionID" CellPadding="3" CellSpacing="3" OnEditCommand="gridCommunity_Edit" OnCancelCommand="gridCommunity_Cancel" HorizontalAlign="Left">
+                                                    <AlternatingItemStyle HorizontalAlign="Left"></AlternatingItemStyle>
+                                                    <ItemTemplate>
+                                                        <asp:Label CssClass="LabelLarge" runat="server" ID="Title" Font-Bold="True" Text='<%# DataBinder.Eval(Container.DataItem, "Title") %>' />
+                                                        <br />
+                                                        <asp:Label CssClass="Text" runat="server" ID="FirstPerformanceDateTime" Text='<%# DataBinder.Eval(Container.DataItem, "FirstPerformanceDateTime","{0:MM/dd/yy}") %>' />
+                                                        thru
+                                                        <asp:Label CssClass="Text" runat="server" ID="LastPerformanceDateTime" Text='<%# DataBinder.Eval(Container.DataItem, "LastPerformanceDateTime","{0:MM/dd/yy}") %>' />
+                                                        <br />
+                                                        performed at
+                                                        <asp:Label CssClass="LabelLarge" runat="server" ID="VenueName" Text='<%# DataBinder.Eval(Container.DataItem, "VenueName") %>' />
+                                                        on
+                                                        <asp:Label CssClass="Text" runat="server" ID="Address" Text='<%# DataBinder.Eval(Container.DataItem, "Address") %>' />,
+                                                        <asp:Label CssClass="Text" runat="server" ID="City" Text='<%# DataBinder.Eval(Container.DataItem, "City") %>' />
+                                                        <asp:Label CssClass="Text" runat="server" ID="State" Text='<%# DataBinder.Eval(Container.DataItem, "State") %>' />
+                                                        <br />
+                                                        Produced by
+                                                        <asp:Label Font-Bold="True" runat="server" ID="Label11" Text='<%# DataBinder.Eval(Container.DataItem, "CompanyName") %>' />
+                                                        <br />
+                                                        <asp:LinkButton CommandName="Edit" runat="server" ID="Linkbutton1">View Details</asp:LinkButton>
+                                                        <br />
+                                                        <div class="separatorBlack">
+                                                            &nbsp;</div>
+                                                    </ItemTemplate>
+                                                    <EditItemTemplate>
+                                                        <table bgcolor="#ffffcc" width="100%" class="Text">
+                                                            <tr>
+                                                                <td>
+                                                                    <asp:Label CssClass="LabelLarge" runat="server" ID="Label1" Font-Bold="True" Text='<%# DataBinder.Eval(Container.DataItem, "Title") %>' />
+                                                                    <br />
+                                                                    <asp:Label CssClass="Text" runat="server" ID="Label2" Text='<%# DataBinder.Eval(Container.DataItem, "FirstPerformanceDateTime","{0:MM/dd/yy}") %>' />
+                                                                    thru
+                                                                    <asp:Label CssClass="Text" runat="server" ID="Label3" Text='<%# DataBinder.Eval(Container.DataItem, "LastPerformanceDateTime","{0:MM/dd/yy}") %>' />
+                                                                    <br />
+                                                                    performed at
+                                                                    <asp:Label CssClass="LabelMediumBold" runat="server" ID="Label4" Text='<%# DataBinder.Eval(Container.DataItem, "VenueName") %>' />
+                                                                    on
+                                                                    <asp:Label CssClass="Text" runat="server" ID="Label5" Text='<%# DataBinder.Eval(Container.DataItem, "Address") %>' />,
+                                                                    <asp:Label CssClass="Text" runat="server" ID="Label6" Text='<%# DataBinder.Eval(Container.DataItem, "City") %>' />
+                                                                    <asp:Label CssClass="Text" runat="server" ID="Label7" Text='<%# DataBinder.Eval(Container.DataItem, "State") %>' />
+                                                                    <br />
+                                                                    <asp:Label CssClass="Text" runat="server" ID="Label8" Text='<%# DataBinder.Eval(Container.DataItem, "ProductionType") %>' />
+                                                                    -
+                                                                    <asp:Label CssClass="Text" runat="server" ID="Label9" Text='<%# DataBinder.Eval(Container.DataItem, "AgeAppropriateName") %>' />
+                                                                    <br />
+                                                                    Produced by
+                                                                    <asp:Label CssClass="Text" Font-Bold="True" runat="server" ID="Label10" Text='<%# DataBinder.Eval(Container.DataItem, "CompanyName") %>' />
+                                                                    <br />
+                                                                    <a class="fontDataHyperlink" href='http://<%# DataBinder.Eval(Container.DataItem, "Website") %>'>
+                                                                        <%# DataBinder.Eval(Container.DataItem, "Website") %>
+                                                                    </a>
+                                                                    <br />
+                                                                    <asp:Label CssClass="Text" runat="server" ID="AllPerformanceDatesTimes" Text='<%# DataBinder.Eval(Container.DataItem, "AllPerformanceDatesTimes") %>' />
+                                                                    <br />
+                                                                    <asp:Label CssClass="Text" runat="server" ID="TicketPurchaseDetails" Text='<%# DataBinder.Eval(Container.DataItem, "TicketPurchaseDetails") %>' />
+                                                                    <br />
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <div class="separatorBlack">
+                                                            &nbsp;</div>
+                                                    </EditItemTemplate>
+                                                </asp:DataList>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

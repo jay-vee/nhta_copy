@@ -1,0 +1,230 @@
+﻿<%@ Master Language="VB" EnableTheming="false" CodeBehind="MasterPage.Master.vb" Inherits="Adjudication.MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Adjudication Website for the NH Theatre Awards</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="msapplication-TileColor" content="#00a776" />
+    <meta name="msapplication-TileImage" content="Images/NHTA_HappySadFaces_Black_120x127px.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="Scripts/Bootstrap-3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Scripts/Bootstrap-3.3.2/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Scripts/BootstrapValidator-v0.4.5/css/bootstrapValidator.min.css" rel="stylesheet" />
+    <link href="Scripts/bootstrap3-dialog-master/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="Scripts/jQueryUI-1.11.2/jquery-ui.min.css" rel="stylesheet" />
+    <link href="Scripts/jQueryUI-1.11.2/jquery-ui.theme.min.css" rel="stylesheet" />
+    <link href="Scripts/jQueryUI-1.11.2/jquery-ui.structure.min.css" rel="stylesheet" />
+    
+    <link href="Scripts/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="StyleSheets/NHTA.css" rel="stylesheet" />
+    <style>
+        .navbar {
+            min-height: 30px;
+            margin-bottom: 6px;
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	  <script src="Scripts/html5shiv.js"></script>
+	  <script src="Scripts/respond.min.js"></script>
+	<![endif]-->
+
+    <asp:ContentPlaceHolder ID="cphhead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="FormSiteMaster" runat="server" data-bv-message="This value is not valid" data-bv-feedbackicons-valid="fa fa-ok" data-bv-feedbackicons-invalid="fa fa-remove" data-bv-feedbackicons-validating="fa fa-refresh">
+        <asp:ScriptManager ID="sm1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/jquery-1.11.2.min.js" ScriptMode="Auto"></asp:ScriptReference>
+                <asp:ScriptReference Path="~/Scripts/Bootstrap-3.3.2/js/bootstrap.min.js" ScriptMode="Auto"></asp:ScriptReference>
+                <asp:ScriptReference Path="~/Scripts/BootstrapValidator-v0.4.5/js/bootstrapValidator.min.js" ScriptMode="Auto"></asp:ScriptReference>
+                <asp:ScriptReference Path="~/Includes/Functions.js" ScriptMode="Auto"></asp:ScriptReference>
+                <asp:ScriptReference Path="~/Scripts/BootstrapTableEffects.js" ScriptMode="Auto"></asp:ScriptReference>
+                <asp:ScriptReference Path="~/Scripts/Moment.min.js" ScriptMode="Auto"></asp:ScriptReference>
+                <asp:ScriptReference Path="~/Scripts/Bootstrap-slider/js/bootstrap-slider.js" ScriptMode="Auto"></asp:ScriptReference>
+                <asp:ScriptReference Path="~/Scripts/bootstrap3-dialog-master/js/bootstrap-dialog.min.js" ScriptMode="Auto"></asp:ScriptReference>
+                <asp:ScriptReference Path="~/Scripts/BootstrapAlertCustomizations.js" ScriptMode="Auto"></asp:ScriptReference>
+                <asp:ScriptReference Path="~/Scripts/jQueryUI-1.11.2/jquery-ui.min.js" ScriptMode="Auto"></asp:ScriptReference>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <nav id="navMenu" class="navbar navbar-default navbar-static-top" role="navigation" runat="server">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="padding: 1px !important;" href="<%= ResolveUrl("~/")%>MainPage.aspx" title="Click to return to Main Menu">
+                        <img src="<%= ResolveUrl("~/")%>Images/NHTA_HappySadFaces_Black_120x127px.png" style="max-width: 45px; width: 100%; height: auto;" alt="" id="imgMainLogo" class="pull-left" />
+                    </a>
+
+                    <button type="button" class="navbar-toggle btn btn-gold" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Tottle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="divMainMenu" class="navbar-collapse collapse" role="navigation" runat="server">
+                    <!-- Adjudicator and Liaison Menus (left) -->
+                    <ul class="nav navbar-nav" role="navigation">
+                        <li class="dropdown" runat="server" id="mnuAccount"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%= ResolveUrl("~/")%>MainPage.aspx" class="FontBold"><i class="fa fa-home fa-fw" aria-hidden="true">&nbsp;</i>Main Menu</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminUser.aspx"><i class="fa fa-user fa-fw" aria-hidden="true">&nbsp;</i>My Account Information</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminUser.aspx?ChangePassword=True"><i class="fa fa-user-secret fa-fw" aria-hidden="true">&nbsp;</i>Change My Password</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>ViewAssignments.aspx"><i class="fa fa-list fa-fw" aria-hidden="true">&nbsp;</i>My Company Adjudications</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>MessageToAdmin.aspx"><i class="fa fa-comment fa-fw" aria-hidden="true">&nbsp;</i>Message to Administrators</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>UpcomingProductions.aspx" target="_blank"><i class="fa fa-th fa-fw" aria-hidden="true">&nbsp;</i>View Upcoming Productions</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>Report_ViewAllProductions.aspx"><i class="fa fa-th-list fa-fw" aria-hidden="true">&nbsp;</i>View All Nominated Productions</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>Report_CompanyList.aspx"><i class="fa fa-list-ul fa-fw" aria-hidden="true">&nbsp;</i>View All particpating Theatre Companies</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>UpdateNotes/UpdateNotes.TXT" target="_blank"><i class="fa fa-file-code-o fa-fw" aria-hidden="true">&nbsp;</i>Website Upgrade Notes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" runat="server" id="mnuAdjudicators"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Adjudicators<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%= ResolveUrl("~/")%>Adjudicate.aspx?Action=Reassign"><i class="fa fa-reply fa-fw" aria-hidden="true" style="color">&nbsp;</i>Request Reassignment</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>Adjudicate.aspx?Action=Confirm"><i class="fa fa-support fa-fw" aria-hidden="true">&nbsp;</i>Assignment Status</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>Adjudicate.aspx?Action=Score"><i class="fa fa-pencil fa-fw" aria-hidden="true">&nbsp;</i>IN PROGRESS: Score Ballot</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>Adjudicate.aspx?Action=Print"><i class="fa fa-print fa-fw" aria-hidden="true">&nbsp;</i>Print Ballot</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" runat="server" id="mnuLiaisons"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Liaisons<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%= ResolveUrl("~/")%>AdminCompany.aspx"><i class="fa fa-building fa-fw" aria-hidden="true">&nbsp;</i>Our Theater Company</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>ViewAssignments.aspx"><i class="fa fa-list fa-fw" aria-hidden="true">&nbsp;</i>Our Adjudicator Assignments</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminProduction.aspx"><i class="fa fa-th-list fa-fw" aria-hidden="true">&nbsp;</i>Our Productions</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>ConfirmAdjudicator.aspx"><i class="fa fa-list-ul fa-fw" aria-hidden="true">&nbsp;</i>Our Nominations</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>ConfirmAdjudicator.aspx"><i class="fa fa-check-square fa-fw" aria-hidden="true">&nbsp;</i>Confirm Adjudicator</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminVenueList.aspx"><i class="fa fa-university fa-fw" aria-hidden="true">&nbsp;</i>Performance Venues</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Admin Menus -->
+                    <ul class="nav navbar-nav navbar-right" role="navigation">
+                        <li class="dropdown" runat="server" id="mnuEmail"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Email<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%= ResolveUrl("~/")%>AdminEmail.aspx"><i class="fa fa-envelope fa-fw" aria-hidden="true">&nbsp;</i>Send Email</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminEmailMassMailings.aspx"><i class="fa fa-envelope-o fa-fw" aria-hidden="true">&nbsp;</i>Send Email Reminders</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminEmailLog.aspx"><i class="fa fa-envelope-square fa-fw" aria-hidden="true">&nbsp;</i>Sent Emails Log </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown" runat="server" id="mnuAdministration"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Administration<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%= ResolveUrl("~/")%>AdminUserList.aspx"><i class="fa fa-user fa-fw" aria-hidden="true">&nbsp;</i>User Administration</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminCompanyList.aspx"><i class="fa fa-building fa-fw" aria-hidden="true">&nbsp;</i>Theatre Companies</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminAssignAdjudicators.aspx"><i class="fa fa-user-plus fa-fw" aria-hidden="true">&nbsp;</i>Assign Adjudicator</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminReassignmentRequests.aspx"><i class="fa fa-user-times fa-fw" aria-hidden="true">&nbsp;</i>ReAssign Adjudicator</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminScoring.aspx"><i class="fa fa-trophy fa-fw" aria-hidden="true">&nbsp;</i>Ballots/Scores</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminProductionList.aspx"><i class="fa fa-list fa-fw" aria-hidden="true">&nbsp;</i>Productions & Nominations</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminVenueList.aspx"><i class="fa fa-university fa-fw" aria-hidden="true">&nbsp;</i>Venues</a></li>
+                                <li class="divider"></li>
+                                <li><a href="Reports.aspx"><i class="fa fa-list-alt fa-fw" aria-hidden="true">&nbsp;</i>Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown" runat="server" id="mnuWebsiteSettings"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Website<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<%= ResolveUrl("~/")%>AdminCategoryScoringRangeList.aspx"><i class="fa fa-th-list fa-fw" aria-hidden="true">&nbsp;</i>Matrix Comments</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminCategoryList.aspx"><i class="fa fa-list-ul fa-fw" aria-hidden="true">&nbsp;</i>Award Categories</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminScoringRangeList.aspx"><i class="fa fa-list-ol fa-fw" aria-hidden="true">&nbsp;</i>Scoring Bands/Ranges</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>Admin_WebsiteNotes.aspx"><i class="fa fa-comment fa-fw" aria-hidden="true">&nbsp;</i>Home Page Messages</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>Admin_WebsiteSettings.aspx"><i class="fa fa-gear fa-fw" aria-hidden="true">&nbsp;</i>Adjudication Settings</a></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminLoginSettings.aspx"><i class="fa fa-gears fa-fw" aria-hidden="true">&nbsp;</i>Login Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminMessages.aspx"><i class="fa fa-envelope-square fa-fw" aria-hidden="true">&nbsp;</i>Summary Admin Messages</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<%= ResolveUrl("~/")%>AdminErrorLog.aspx"><i class="fa fa-warning fa-fw" aria-hidden="true">&nbsp;</i>Error Log</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="<%= ResolveUrl("~/")%>Login.aspx"><i class="fa fa-sign-out fa-fw" aria-hidden="true">&nbsp;</i>Logout</a></li>
+                        <li class="hidden-sm hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    </ul>
+                </div>
+                <!-- #divMainMenu .navbar-collapse -->
+
+
+                <div id="divBallotMenu" class="navbar-collapse collapse" role="navigation" runat="server" visible="false">
+                    <ul class="nav navbar-nav" role="navigation">
+                        <li><a href="<%= ResolveUrl("~/")%>MainPage.aspx">Main Menu</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nominated Categories<b class="caret"></b></a>
+                            <ul id="ulNominatedCategories" class="dropdown-menu" runat="server">
+                            </ul>
+                        </li>
+                        <li><a href="<%= ResolveUrl("~/")%>Login.aspx"><i class="fa fa-sign-out fa-fw" aria-hidden="true">&nbsp;</i>Logout</a></li>
+                        <li class="hidden-sm hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    </ul>
+
+                </div>
+                <!-- #divBallotMenu .navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="divPageTitle" runat="server" class="row">
+                        <div class="col-md-6">
+                            <span style="padding-left: 12px;">
+                                <asp:Label runat="server" ID="lblPageTitle" CssClass="FontLargeBold"></asp:Label></span>
+                            <span id="spnOverridesActive" runat="server" visible="false" style='color: darkorange; font-weight: normal;' class='pull-right'>[TEST OVERRIDES ACTIVE]</span>
+                        </div>
+                        <div class="col-md-6">
+                            <asp:Label ID="lblMessage" runat="server" CssClass="Label" ForeColor="red" Visible="False"></asp:Label>
+                        </div>
+                    </div>
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <footer class="footer col-md-8">
+                <div class="row">
+                    <p class="text-muted small">
+                        <asp:Label ID="lblLoginID" runat="server" CssClass="pull-left"></asp:Label>
+                        <span class="pull-right">Last Build Date:
+						<asp:Label ID="lblWebsiteLastBuildDate" runat="server" EnableViewState="False"></asp:Label>
+                        </span>
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <input type="hidden" id="hdnTimeoutValue" runat="server" />
+        <input type="hidden" id="hdnCurrentTime" runat="server" />
+        <asp:Button runat="server" ID="btnTimeOut" Style="display: none;" />
+    </form>
+    <script type="text/javascript" id="1">
+        //var futuredate = new cdtime("cpcontainer", document.getElementById("hdnTimeoutValue").value, document.getElementById("hdnCurrentTime").value);
+        //futuredate.displaycountdown("minutes", formatresults);
+    </script>
+
+</body>
+</html>

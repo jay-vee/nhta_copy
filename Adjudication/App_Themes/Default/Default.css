@@ -1,0 +1,603 @@
+/* ==== Styles for AJAX Calendar ==== */
+AjaxCalendar .ajax__calendar_container
+{
+	border: 1px solid #646464;
+	background-color: #d8d8d8; /* WhiteSmoke */
+	color: black;
+}
+.AjaxCalendar .ajax__calendar_header
+{
+	background-color: #d8d8d8; /* WhiteSmoke */
+	margin-bottom: 4px;
+	color: Black;
+}
+.AjaxCalendar .ajax__calendar_title, .AjaxCalendar .ajax__calendar_next, .AjaxCalendar .ajax__calendar_prev
+{
+	color: #002469;
+	padding-top: 3px;
+}
+.AjaxCalendar .ajax__calendar_footer
+{
+	height: 15px;
+	background-color: #d8d8d8; /* WhiteSmoke */
+}
+.AjaxCalendar .ajax__calendar_body
+{
+	background-color: White;
+	border: solid 1px #cccccc;
+}
+.AjaxCalendar .ajax__calendar_dayname
+{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 2px;
+}
+.AjaxCalendar .ajax__calendar_day
+{
+	text-align: center;
+}
+.AjaxCalendar .ajax__calendar_today
+{
+	font-weight: bold;
+}
+.AjaxCalendar .ajax__calendar_other, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_today, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_title
+{
+	color: #bbbbbb;
+}
+.AjaxCalendar .ajax__calendar_other .ajax__calendar_day, .AjaxCalendar .ajax__calendar_other .ajax__calendar_year
+{
+	color: Gray;
+}
+.AjaxCalendar .ajax__calendar_hover .ajax__calendar_day, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_month, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_year
+{
+	background-color: #002469;
+	color: White;
+	font-weight: bold;
+}
+.AjaxCalendar .ajax__calendar_active .ajax__calendar_month
+{
+	background-color: #d8d8d8; /* WhiteSmoke */
+	color: black;
+	font-weight: bold;
+}
+.AjaxCalendar .ajax__calendar_active .ajax__calendar_year
+{
+	background-color: #d8d8d8; /* WhiteSmoke */
+	color: black;
+	font-weight: bold;
+}
+.AjaxCalendar .ajax__calendar_active .ajax__calendar_day
+{
+	background-color: #F0F0F0;
+	color: #002469;
+	font-weight: bold;
+}
+.ImageButton
+{
+	cursor: pointer;
+}
+
+
+.MainFont
+{
+	color: Black;
+	font-family: Arial;
+	font-size: smaller;
+}
+.MainFontHeader
+{
+	color: Black;
+	font-family: Arial;
+	font-size: medium;
+	font-weight: bold;
+}
+.MainFontLarge
+{
+	color: Black;
+	font-family: Arial;
+	font-size: medium;
+	font-weight: bold;
+}
+
+/* Controls the Navigation */
+
+.PPTTemplate
+{
+	background-repeat: repeat-x;
+	background-image: url(Images/NHTAGradientVertical400.jpg);
+	height: 800px;
+	color: White;
+}
+
+.buttonscontainer
+{
+	width: 140px;
+}
+
+.buttons a
+{
+	color: #FFFFFF;
+	background-color: #000000;
+	padding: 2px;
+	padding-left: 3px;
+	display: block;
+	border-left: 10px solid #FFFFCC;
+	font: 12px Arial, sans-serif;
+	text-decoration: none;
+	text-align: left;
+	margin-top: 1px;
+}
+
+.buttons a:hover
+{
+	border-left: 10px solid #FFFF66; /* color: #FFFF66; */
+	text-decoration: underline;
+	background-color: White;
+	color: Maroon;
+}
+
+
+.BannerHeader
+{
+	font-size: larger;
+	color: White;
+	font-weight: bold;
+	font-family: Times New Roman;
+	font-variant: small-caps;
+	background-color: Black;
+}
+
+/* Controls the main application font */
+.fontTitle
+{
+	font-size: larger;
+	color: Black;
+	font-family: Arial;
+	font-variant: small-caps;
+}
+
+.fontTitleHeader
+{
+	font-size: x-large;
+	color: White;
+	font-weight: bold;
+	font-family: Arial;
+	font-variant: small-caps;
+}
+
+
+.fontTitleHeaderBlack
+{
+	font-size: x-large;
+	color: Black;
+	font-weight: bold;
+	font-family: Arial;
+	font-variant: small-caps;
+}
+
+.fontTitleHeaderLight
+{
+	font-size: medium;
+	color: White;
+	font-weight: bold;
+	font-family: Arial;
+	font-variant: small-caps;
+}
+
+
+.LabelMediumBold
+{
+	color: Black;
+	font-family: Arial;
+	font-size: large;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.fontHeaderWhite
+{
+	color: White;
+	font-family: Arial;
+	font-size: large;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.fontDataWhite
+{
+	color: White;
+	font-family: Arial;
+	font-size: medium;
+}
+
+.fontHeaderMedium
+{
+	color: Black;
+	font-family: Arial;
+	font-size: medium;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+
+.LabelLarge
+{
+	color: Black;
+	font-family: Arial;
+	font-size: medium;
+	font-variant: small-caps;
+}
+
+.fontHeaderSmall
+{
+	color: Black;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: medium;
+	font-variant: small-caps;
+}
+
+.fontFooter
+{
+	font-family: Arial;
+	font-size: smaller;
+}
+
+.fontDataLabelName
+{
+	font-family: Arial;
+	font-size: smaller;
+	font-variant: small-caps;
+}
+
+.fontDataHeader
+{
+	color: Black;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: medium;
+	font-variant: small-caps;
+}
+.Text
+{
+	color: Black;
+	font-family: Arial;
+	font-size: small;
+}
+
+.fontDataLarge
+{
+	color: Black;
+	font-family: Arial;
+	font-size: medium;
+}
+
+.fontDataSelected
+{
+	color: Black;
+	font-family: Arial;
+	font-size: medium;
+	background-color: Silver;
+}
+
+
+.fontDataHyperlink
+{
+	color: blue;
+	font-family: Arial;
+	font-size: medium;
+}
+
+.fontDataHyperlinkSmall
+{
+	color: blue;
+	font-family: Arial;
+	font-size: x-small;
+}
+
+.fontDataDesc
+{
+	color: Black;
+	font-family: Arial;
+	font-size: smaller;
+	font-variant: small-caps;
+}
+
+.fontDatasmall
+{
+	color: Black;
+	font-family: Arial;
+	font-size: 9;
+}
+
+.fontDatasmall_ReportHeader
+{
+	color: Black;
+	font-family: Arial;
+	font-size: 9;
+	border-bottom-style: solid;
+	border-bottom-width: medium;
+	border-bottom-color: #000000;
+}
+
+
+.fontData_LightBorder
+{
+	color: Black;
+	font-family: Arial;
+	font-size: medium;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: Gray;
+}
+
+.UnderConstruction
+{
+	background-repeat: repeat-x;
+	background-image: url(Images/UnderConstruction.jpg);
+}
+
+.GradientVertical
+{
+	background-repeat: repeat-x;
+	background-image: url(Images/NHTAGradientVertical.jpg);
+}
+
+.Divider_GradientHorizontal660
+{
+	background-repeat: no-repeat;
+	background-image: url(Images/NHTAGradientHorizontal.jpg);
+	width: 660px;
+	height: 1px;
+}
+
+.GradientHorizontal
+{
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal30px.jpg);
+}
+
+.fontScoringHeader
+{
+	color: White;
+	font-family: Arial;
+	font-size: medium;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal.jpg);
+}
+
+.fontScoringHeader
+{
+	color: White;
+	font-family: Arial;
+	font-size: medium;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.fontScoringHeader
+{
+	color: White;
+	font-family: Arial;
+	font-size: medium;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.DefaultGridHeader800
+{
+	color: White;
+	font-family: Arial;
+	font-size: medium;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.fontScoringHeader
+{
+	color: White;
+	font-family: Arial;
+	font-size: 16;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.ReportHeader1000
+{
+	color: White;
+	font-family: Arial;
+	font-size: 16;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal1000.jpg);
+}
+
+.ReportHeader1000_Webformat
+{
+	color: Black;
+	font-family: Arial;
+	font-size: 16;
+	width: 1000px;
+	text-decoration: underline;
+}
+
+.ReportDetailSummary800
+{
+	color: Black;
+	font-family: Arial;
+	font-size: medium;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal800.jpg);
+}
+
+.ReportHeader1240
+{
+	color: White;
+	font-family: Arial;
+	font-size: 16;
+	font-weight: bold;
+	font-variant: small-caps;
+	background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal1240.jpg);
+}
+.LeftNavEmpty
+{
+	font-size: 4px;
+}
+
+.BannerHeaderImage
+{
+	padding: 1px;
+	background-image: url(     '/Images/NHTA_WebBanner_2009_650X99px.jpg' );
+	background-repeat: no-repeat;
+	width: 650px;
+	height: 100px;
+}
+
+.validatorCalloutHighlight
+{
+	background-color: lemonchiffon;
+}
+
+.Question
+{
+	color: maroon;
+	font-weight: bold;
+}
+.Answer
+{
+	color: #006600;
+	font-weight: bold;
+}
+
+.PanelHeader
+{
+	background: url(    'Images/Bottom_Bar_Silver_20px.png' ) repeat-x bottom;
+	font-family: arial;
+	font-size: larger;
+	color: #002469;
+	font-weight: bold;
+}
+
+.TableBorder
+{
+	font-family: arial;
+	font-size: larger;
+	font-weight: normal;
+	font-variant: small-caps;
+	border: 1px solid #002469;
+}
+
+.Text
+{
+	font-family: Arial;
+	
+	font-weight: normal;
+}
+
+.TextBold
+{
+	font-family: Arial;
+	
+	font-weight: bold;
+}
+
+.TextItalic
+{
+	font-family: Arial;
+	
+	font-weight: normal;
+	font-style:italic;
+}
+.TextLargeBold
+{
+	font-family: Arial;
+	font-size: larger;
+	font-weight: bold;
+}
+
+.TextLarge
+{
+	font-family: Arial;
+	font-size: larger;
+	font-weight: normal;
+}
+
+.TextSmall
+{
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.Label
+{
+	font-family: arial;
+	
+	font-weight: normal;
+	font-variant: small-caps;
+}
+
+.LabelBold
+{
+	font-family: arial;
+	
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.LabelLarge
+{
+	font-family: arial;
+	font-size: larger;
+	font-weight: normal;
+	font-variant: small-caps;
+}
+
+.LabelLargeBold
+{
+	font-family: arial;
+	font-size: larger;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.LabelUnderline
+{
+	font-family: arial;
+	
+	font-weight: normal;
+	font-variant: small-caps;
+	text-decoration: underline;
+}
+
+.LabelLargeUnderline
+{
+	font-family: arial;
+	font-size: larger;
+	font-weight: normal;
+	font-variant: small-caps;
+	text-decoration: underline;
+}
+
+.GradientHeader
+{
+	background-position: center top;
+	background: url(  'Images/HeaderGradient_Gold_30x1px.png' ) repeat-x;
+}
+
+.UpdateProgressWait
+{
+	height: 28px;
+}

@@ -1,0 +1,193 @@
+﻿body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.TableSpacing {
+    width: 100%;
+    border-spacing: 4px;
+    border-collapse: separate;
+}
+
+.TextCenter {
+    text-align: center;
+}
+
+label {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.control-label {
+    padding-top: 0.5em;
+}
+
+.SliderValueText {
+    color: #f6931f;
+}
+
+.FontLarge {
+    font-size: larger;
+}
+
+.FontLargeBold {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.FontBold {
+    font-weight: bold;
+}
+
+.FontItalic {
+    font-style: italic;
+}
+
+.FontNormal {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.FontHyperLink {
+    font-weight: normal;
+    font-style: normal;
+    color: blue;
+    text-decoration: none;
+}
+
+.FontSmall {
+    font-size: small;
+}
+
+.FontSmaller {
+    font-size: smaller;
+}
+
+.panel-dark {
+    border-color: silver;
+}
+
+    .panel-dark > .panel-heading {
+        font-size: larger;
+        color: gold;
+        background-color: #222222;
+        border-color: silver;
+    }
+
+        .panel-dark > .panel-heading > a {
+            color: gold;
+            background-color: #222222;
+            border-color: silver;
+        }
+
+        .panel-dark > .panel-heading + .panel-collapse > .panel-body {
+            border-top-color: #222222;
+        }
+
+        .panel-dark > .panel-heading .badge {
+            color: #222222;
+            background-color: #ffffff;
+        }
+
+    .panel-dark > .panel-footer + .panel-collapse > .panel-body {
+        border-bottom-color: silver;
+    }
+
+
+
+.panel-admin {
+    border-color: maroon;
+}
+
+    .panel-admin > .panel-heading {
+        font-size: larger;
+        color: #b53737;
+        background-color: #ffe763;
+        border-color: maroon;
+    }
+
+        .panel-admin > .panel-heading > a {
+            color: gold;
+            background-color: #222222;
+            border-color: maroon;
+        }
+
+        .panel-admin > .panel-heading + .panel-collapse > .panel-body {
+            border-top-color: maroon;
+        }
+
+        .panel-admin > .panel-heading .badge {
+            color: #222222;
+            background-color: #ffffff;
+        }
+
+    .panel-admin > .panel-footer + .panel-collapse > .panel-body {
+        border-bottom-color: maroon;
+    }
+
+.panel-gold {
+    border-color: silver;
+}
+
+    .panel-gold > .panel-heading {
+        font-size: larger;
+        color: #222222;
+        background-color: #FFE766;
+        border-color: silver;
+    }
+
+        .panel-gold > .panel-heading > a {
+            color: #222222;
+            background-color: #FFE766;
+            border-color: silver;
+        }
+
+        .panel-gold > .panel-heading + .panel-collapse > .panel-body {
+            border-top-color: #222222;
+        }
+
+        .panel-gold > .panel-heading .badge {
+            color: #FFE766;
+            background-color: #ffffff;
+        }
+
+    .panel-gold > .panel-footer + .panel-collapse > .panel-body {
+        border-bottom-color: silver;
+    }
+
+
+.btn-gold {
+    background-repeat: repeat-x;
+    border-color: silver;
+    background-image: linear-gradient(to bottom, #FFD700 0%, #FFE766 100%);
+}
+
+    .btn-gold:hover,
+    .btn-gold:focus {
+        background-color: #FFE766;
+        background-position: 0 -15px;
+    }
+
+    .btn-gold:active,
+    .btn-gold.active {
+        background-color: #FFE766;
+        border-color: silver;
+    }
+/* START Sticky footer styles-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 1.5em;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+    height: 1.5em;
+}
+/* END Sticky footer styles-------------------------------------------------- */

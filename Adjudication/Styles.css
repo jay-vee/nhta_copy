@@ -1,0 +1,596 @@
+/* ==== Styles for AJAX Calendar ==== */
+.AjaxCalendar .ajax__calendar_container {
+	border: 1px solid #646464;
+	background-color: #d8d8d8; /* WhiteSmoke */
+	color: black;
+}
+
+.AjaxCalendar .ajax__calendar_header {
+	background-color: #d8d8d8; /* WhiteSmoke */
+	margin-bottom: 4px;
+	color: Black;
+}
+
+.AjaxCalendar .ajax__calendar_title, .AjaxCalendar .ajax__calendar_next, .AjaxCalendar .ajax__calendar_prev {
+	color: #002469;
+	padding-top: 3px;
+}
+
+.AjaxCalendar .ajax__calendar_footer {
+	height: 15px;
+	background-color: #d8d8d8; /* WhiteSmoke */
+}
+
+.AjaxCalendar .ajax__calendar_body {
+	background-color: White;
+	border: solid 1px #cccccc;
+}
+
+.AjaxCalendar .ajax__calendar_dayname {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-top: 2px;
+}
+
+.AjaxCalendar .ajax__calendar_day {
+	text-align: center;
+}
+
+.AjaxCalendar .ajax__calendar_today {
+	font-weight: bold;
+}
+
+.AjaxCalendar .ajax__calendar_other, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_today, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_title {
+	color: #bbbbbb;
+}
+
+	.AjaxCalendar .ajax__calendar_other .ajax__calendar_day, .AjaxCalendar .ajax__calendar_other .ajax__calendar_year {
+		color: Gray;
+	}
+
+.AjaxCalendar .ajax__calendar_hover .ajax__calendar_day, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_month, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_year {
+	background-color: #002469;
+	color: White;
+	font-weight: bold;
+}
+
+.AjaxCalendar .ajax__calendar_active .ajax__calendar_month {
+	background-color: #d8d8d8; /* WhiteSmoke */
+	color: black;
+	font-weight: bold;
+}
+
+.AjaxCalendar .ajax__calendar_active .ajax__calendar_year {
+	background-color: #d8d8d8; /* WhiteSmoke */
+	color: black;
+	font-weight: bold;
+}
+
+.AjaxCalendar .ajax__calendar_active .ajax__calendar_day {
+	background-color: #F0F0F0;
+	color: #002469;
+	font-weight: bold;
+}
+
+.ImageButton {
+	cursor: pointer;
+}
+
+
+.MainFont {
+	color: Black;
+	font-size: smaller;
+}
+
+.MainFontHeader {
+	color: Black;
+	font-weight: bold;
+}
+
+.MainFontLarge {
+	color: Black;
+	font-size: larger;
+	font-weight: bold;
+}
+
+/* Controls the Navigation */
+
+.PPTTemplate {
+	background-repeat: repeat-x;
+	background-image: url(Images/NHTAGradientVertical400.jpg);
+	height: 800px;
+	color: White;
+}
+
+.buttonscontainer {
+	width: 140px;
+}
+
+.buttons a {
+	color: #FFFFFF;
+	background-color: #000000;
+	padding: 2px;
+	padding-left: 3px;
+	display: block;
+	border-left: 10px solid #FFFFCC;
+	font: 12px Arial, sans-serif;
+	text-decoration: none;
+	text-align: left;
+	margin-top: 1px;
+}
+
+	.buttons a:hover {
+		border-left: 10px solid #FFFF66; /* color: #FFFF66; */
+		text-decoration: underline;
+		background-color: White;
+		color: Maroon;
+	}
+
+
+.BannerHeader {
+	font-size: larger;
+	color: White;
+	font-weight: bold;
+	
+	background-color: Black;
+}
+
+/* Controls the main application font */
+.fontTitle {
+	font-size: larger;
+	color: Black;
+	
+}
+
+.fontTitleHeader {
+	font-size: x-large;
+	color: White;
+	font-weight: bold;
+	
+}
+
+
+.fontTitleHeaderBlack {
+	font-size: x-large;
+	color: Black;
+	font-weight: bold;
+	
+}
+
+.fontTitleHeaderLight {
+	font-size: larger;
+	color: White;
+	font-weight: bold;
+	
+}
+
+
+.LabelMediumBold {
+	color: Black;
+	font-size: larger;
+	font-weight: bold;
+	
+}
+
+.fontHeaderWhite {
+	color: White;
+	font-weight: bold;
+	
+}
+
+.fontDataWhite {
+	color: White;
+}
+
+.fontHeaderMedium {
+	color: Black;
+	font-size: larger;
+	font-weight: bold;
+	
+}
+
+
+.LabelLarge {
+	color: Black;
+	font-size: larger;
+	
+}
+
+.fontHeaderSmall {
+	color: Black;
+	font-weight: bold;
+	font-size: larger;
+	
+}
+
+.fontFooter {
+	font-size: smaller;
+}
+
+.fontDataLabelName {
+	font-size: smaller;
+	
+}
+
+.fontDataHeader {
+	color: Black;
+	font-weight: bold;
+	font-size: larger;
+	
+}
+
+.Text {
+	color: Black;
+}
+
+.fontDataLarge {
+	color: Black;
+	font-size: larger;
+}
+
+.fontDataSelected {
+	color: Black;
+	font-size: larger;
+	background-color: Silver;
+}
+
+
+.fontDataHyperlink {
+	color: blue;
+}
+
+.fontDataHyperlinkSmall {
+	color: blue;
+	font-size: smaller;
+}
+
+.fontDataDesc {
+	color: Black;
+	
+}
+
+.fontDatasmall {
+	color: Black;
+	font-size: 9;
+}
+
+.fontDatasmall_ReportHeader {
+	color: Black;
+	font-size: 9;
+	border-bottom-style: solid;
+	border-bottom-width: medium;
+	border-bottom-color: #000000;
+}
+
+
+.fontData_LightBorder {
+	color: Black;
+	font-size: larger;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: Gray;
+}
+
+.UnderConstruction {
+	background-repeat: repeat-x;
+	background-image: url(Images/UnderConstruction.jpg);
+}
+
+.GradientVertical {
+	background-repeat: repeat-x;
+	background-image: url(Images/NHTAGradientVertical.jpg);
+}
+
+.Divider_GradientHorizontal660 {
+	/*background-repeat: no-repeat;
+	background-image: url(Images/NHTAGradientHorizontal.jpg);
+	width: 660px;*/
+	border-bottom: solid #FFCC00 1px;
+	height: 1px;
+}
+
+.GradientHorizontal {
+	/*background-repeat: repeat-y;
+	background-image: url(Images/NHTAGradientHorizontal30px.jpg);*/
+	border-bottom: solid #FFCC00 1px;
+	width: 30px;
+}
+
+.fontScoringHeader {
+	background-position: bottom;
+	color: Black;
+	font-size: larger;
+	font-weight: bold;
+	
+	/*background-repeat: repeat-x;
+	background-image: url(Images/Gradient_DarkGold-Gold_Vertical_20px.jpg);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #b3af48;*/
+	border-bottom: solid #000000 1px;
+	/*border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #000000;*/
+	padding-left: 4px;
+	margin-top: 10px;
+}
+
+.DefaultGridHeader800 {
+	color: Black;
+	font-size: larger;
+	font-weight: bold;
+	
+	/*background-repeat: repeat-x;
+	background-image: url(Images/Gradient_DarkGold-Gold_Vertical_20px.jpg);*/
+	border-bottom: solid #999966 1px;
+}
+
+.ReportHeader1000 {
+	color: White;
+	font-size: 16;
+	font-weight: bold;
+	
+	border-bottom-color: #999966;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.ReportHeader1000_Webformat {
+	color: Black;
+	font-size: 16;
+	width: 1000px;
+	text-decoration: underline;
+}
+
+.ReportDetailSummary800 {
+	color: Black;
+	font-size: larger;
+	
+	background-repeat: repeat-x;
+	background-image: url(Images/Gradient_DarkGold-Gold_Vertical_20px.jpg);
+}
+
+.ReportHeader1240 {
+	color: black;
+	font-size: 16;
+	font-weight: bold;
+	
+	background-repeat: repeat-x;
+	background-image: url(Images/Gradient_DarkGold-Gold_Vertical_20px.jpg);
+}
+
+.LeftNavEmpty {
+	font-size: 4px;
+}
+
+.validatorCalloutHighlight {
+	background-color: lemonchiffon;
+}
+
+.Question {
+	color: maroon;
+	font-weight: bold;
+}
+
+.Answer {
+	color: #006600;
+	font-weight: bold;
+}
+
+.PanelHeader {
+	background: url( 'Images/Bottom_Bar_Silver_20px.png' ) repeat-x bottom;
+	font-size: larger;
+	color: #002469;
+	font-weight: bold;
+}
+
+.TableBorder {
+	border: 1px solid #002469;
+}
+/*
+	font-size: larger;
+	font-weight: normal;
+	
+*/
+
+.Text {
+	font-weight: normal;
+}
+
+.Text_Blue {
+	font-weight: normal;
+	color: #0033CC;
+}
+
+.TextBold {
+	font-weight: bold;
+}
+
+.TextItalic {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.TextLargeBold {
+	font-size: larger;
+	font-weight: bold;
+}
+
+.TextLarge {
+	font-size: larger;
+	font-weight: normal;
+}
+
+.TextLargeBold_White {
+	font-size: larger;
+	font-weight: bold;
+	color: White;
+}
+
+.TextSmall {
+	font-size: smaller;
+	font-weight: normal;
+}
+
+.LabelSmall {
+	font-size: smaller;
+	font-weight: normal;
+	
+}
+
+.Label {
+	font-weight: normal;
+	
+}
+
+.LabelBold {
+	font-weight: bold;
+	
+}
+
+.LabelMedium {
+	font-size: larger;
+	font-weight: normal;
+	
+}
+
+.LabelMediumBold {
+	font-size: larger;
+	font-weight: bold;
+	
+}
+
+.LabelLarge {
+	font-size: larger;
+	font-weight: normal;
+	
+}
+
+.LabelLargeBold {
+	font-size: larger;
+	font-weight: bold;
+	
+}
+
+.LabelUnderline {
+	font-weight: normal;
+	
+	text-decoration: underline;
+}
+
+.LabelLargeUnderline {
+	font-size: larger;
+	font-weight: normal;
+	
+	text-decoration: underline;
+}
+
+.GradientHeader {
+	background-position: center top;
+	background: url( 'Images/HeaderGradient_Gold_30x1px.png' ) repeat-x;
+}
+
+.UpdateProgressWait {
+	height: 28px;
+}
+
+.separatorBlack {
+	border-bottom-color: #b3af48;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+.AccordionContent {
+	font-weight: normal;
+	font-variant: normal;
+	border: 1px solid #b3af48;
+}
+
+.AccordionHeader {
+	background-position: bottom;
+	color: Black;
+	font-size: larger;
+	
+	background-repeat: repeat-x;
+	background-image: url(Images/Gradient_DarkGold-Gold_Vertical_30px.jpg);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #b3af48;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: Black;
+}
+
+.AccordionHeader_Selected {
+	background-position: bottom;
+	color: DarkBlue;
+	font-size: larger;
+	
+	font-weight: bold;
+	background-repeat: repeat-x;
+	background-image: url(Images/Gradient_DarkGold-Gold_Vertical_30px.jpg);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #b3af48;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: Black;
+}
+
+.ButtonGold {
+	font-size: x-large;
+	font-weight: bold;
+	
+	background-image: url(Images/Button_WhiteToGold_194x44.png);
+	background-repeat: no-repeat;
+	color: Black;
+	width: 195px;
+	height: 45px;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 10px;
+}
+
+
+
+	.ButtonGold:hover, .btn btn-default:hover {
+		background-image: url(Images/Button_WhiteToGold_194x44_HoverEmboss.png);
+		background-repeat: no-repeat;
+		color: Blue;
+	}
+
+.ButtonGold_Small {
+	
+	background-image: url(Images/Button_WhiteToGold_180x25.png);
+	background-repeat: no-repeat;
+	color: Black;
+	width: 180px;
+	height: 25px;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 4px;
+}
+
+	.ButtonGold_Small:hover {
+		background-image: url(Images/Button_WhiteToGold_180x25_HoverEmboss.png);
+		background-repeat: no-repeat;
+		color: Blue;
+	}
+
+.btn btn-default {
+	font-size: larger;
+	font-weight: bold;
+	
+	background-image: url(Images/Button_WhiteToGold_194x44.png);
+	background-repeat: no-repeat;
+	color: Black;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+}
